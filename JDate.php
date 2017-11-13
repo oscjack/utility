@@ -15,4 +15,9 @@ class JDate
 
         return $time_diff / (3600*24);
     }
+
+    public static function getMonthRange()
+    {
+       return ['first' => date('Y-m-01'), 'last' => date('Y-m-t')];
+    }
 }
